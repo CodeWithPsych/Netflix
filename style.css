@@ -1,0 +1,561 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Pixelify+Sans:wght@600&family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color: black;
+}
+
+/* Main Section Styles */
+.main {
+  height: 70vh;
+  background-image: url(back.jpg);
+  position: relative;
+}
+
+div.box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  background-size: max(1200px, 10vw);
+  position: absolute;
+  top: 0;
+}
+
+/* Navigation Styles */
+nav {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  padding: 23px;
+}
+
+.buttons button {
+  position: relative;
+  z-index: 10;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+}
+
+/* Text Section Styles */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  color: white;
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+  gap: 23px;
+  padding: 30px;
+}
+
+.text span:nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.text span:nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.text span:nth-child(3) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Separation Line Styles */
+.separation {
+  height: 7px;
+  background-color: rgba(23, 23, 23, 0.8);
+  margin-bottom: 12px;
+}
+
+/* Button Styles */
+.red {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 3px 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-red {
+  padding: 3px 24px;
+  font-size: 20px;
+}
+
+.email {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 2px 78px 14px 12px;
+  font-size: 15px;
+  color: white;
+}
+
+/* Data Section Styles */
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Error Section Styles */
+.error {
+  display: none;
+  color: red;
+  position: relative;
+  z-index: 10;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.again-error {
+  margin-bottom: 27px;
+}
+
+/* First Section Styles */
+.firstsection {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+}
+
+.info {
+  color: white;
+}
+
+.first_img img {
+  position: relative;
+  z-index: 10;
+  width: 25vw;
+  right: 0px;
+}
+
+.empty-box {
+  border: 2px solid black;
+  width: 81vw;
+}
+
+.first_img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_img video {
+  position: absolute;
+  height: 19vw;
+  width: 20vw;
+  right: 16vw;
+}
+
+.info div:nth-child(1) {
+  font-size: 48px;
+}
+
+.info div:nth-child(2) {
+  font-size: 23px;
+}
+
+/* Download Section Styles */
+.n {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.download {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 0px 0px 12px 12px;
+  height: 100px;
+  width: 300px;
+}
+
+.stranger {
+  width: 64px !important;
+  height: 91px;
+  padding: 7px;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new div:nth-child(1) {
+  color: white;
+}
+
+.new div:nth-child(2) {
+  color: blue;
+}
+
+/* FAQ Section Styles */
+.faq {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.faqhead {
+  font-size: 37px;
+  font-weight: 900;
+}
+
+/* Question Styles */
+.question {
+  display: flex;
+  border: 2px solid gray;
+  height: 24px;
+  padding: 12px;
+  width: 60vw;
+  justify-content: space-between;
+}
+
+/* Footer Styles */
+.footer {
+  color: gray;
+  cursor: pointer;
+}
+
+.footersections {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section div {
+  text-decoration: underline;
+}
+
+div .space {
+  text-decoration: none;
+}
+
+.end {
+  margin-bottom: 35px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1000px) {
+  .text span:nth-child(1) {
+    font-size: 32px;
+  }
+
+  .text span:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .text span:nth-child(3) {
+    font-size: 18px;
+  }
+
+  .text {
+    gap: 13px;
+    padding: 2px;
+  }
+
+  .empty-box {
+    display: none;
+  }
+  .download {
+    height: 100px;
+    width: 221px;
+  }
+  .info {
+    margin: 12px;
+  }
+  .info div:nth-child(1) {
+    font-size: 20px;
+  }
+  .info div:nth-child(2) {
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .separation {
+    margin-bottom: 0px;
+  }
+  .before-email{
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 741px) {
+  .text span:nth-child(1) {
+    font-size: 27px;
+  }
+
+  .text span:nth-child(2) {
+    font-size: 17px;
+  }
+
+  .text span:nth-child(3) {
+    font-size: 17px;
+  }
+
+  .text {
+    gap: 13px;
+    padding: 2px;
+  }
+
+  .data {
+    flex-direction: column;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .empty-box {
+    display: none;
+  }
+  input{
+    width: 70vw;
+  }
+
+  .first_img video {
+    right: 40vw;
+  }
+  .download {
+    height: 100px;
+    width: 221px;
+  }
+  .n {
+    font-size: 8px;
+  }
+  .section {
+    font-size: 7px;
+  }
+  .info div:nth-child(1) {
+    font-size: 20px;
+  }
+  .info div:nth-child(2) {
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .faqhead {
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 900;
+  }
+  .new {
+    font-size: 12px;
+  }
+  .stranger {
+    width: 50px !important;
+    height: 60px;
+  }
+  .download {
+    height: 72px;
+  }
+  .before-email{
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .text span:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .text span:nth-child(2) {
+    font-size: 17px;
+  }
+
+  .text span:nth-child(3) {
+    font-size: 17px;
+  }
+
+  .text {
+    gap: 13px;
+    padding: 2px;
+  }
+  .n {
+    font-size: 8px;
+  }
+  .section {
+    font-size: 7px;
+  }
+  .data {
+    flex-direction: column;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .empty-box {
+    display: none;
+  }
+  .download {
+    height: 100px;
+    width: 221px;
+  }
+  .info div:nth-child(1) {
+    font-size: 20px;
+  }
+  .info div:nth-child(2) {
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .faqhead {
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 900;
+  }
+  .new {
+    font-size: 12px;
+  }
+  .stranger {
+    width: 50px !important;
+    height: 60px;
+  }
+  .download {
+    height: 72px;
+  }
+  .f{
+    font-size: 11px;
+  }
+  .before-email{
+    padding: 12px;
+  }
+  input{
+    width: 70vw;
+  }
+  .before-email{
+    padding: 12px;
+    font-size: 15;
+  }
+}
+
+@media only screen and (max-width: 284px) {
+  .text span:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .text span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .text span:nth-child(3) {
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .first_img video {
+    right: 37vw;
+  }
+
+  .text {
+    gap: 13px;
+    padding: 2px;
+  }
+
+  .data {
+    flex-direction: column;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .empty-box {
+    display: none;
+  }
+  .download {
+    height: 100px;
+    width: 221px;
+  }
+  .n {
+    font-size: 8px;
+  }
+  .section {
+    font-size: 7px;
+  }
+  .info div:nth-child(1) {
+    font-size: 20px;
+  }
+  .info div:nth-child(2) {
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .faqhead {
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 900;
+  }
+  .new {
+    font-size: 12px;
+  }
+  .stranger {
+    width: 50px !important;
+    height: 60px;
+  }
+  .download {
+    height: 72px;
+  }
+
+.f{
+  font-size: 10px;
+}
+.before-email{
+  padding: 12px;
+  font-size: 15;
+}
+input{
+  width: 70vw;
+}
+}

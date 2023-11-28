@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix by Arham Malik</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Navigation Bar -->
+      <nav>
+        <span class="logo"><img width="114" src="logo.svg" /></span>
+        <div class="buttons">
+          <button class="btn">English</button>
+          <button id="alert" class="red">Sign In</button>
+        </div>
+      </nav>
+      <!-- Main Text and Input Section -->
+      <div class="box"></div>
+      <div class="text">
+        <span>Unlimited movies, TV shows, and more </span>
+        <span>Watch anywhere. Cancel anytime.</span>
+        <span
+          >Ready to watch? Enter your email to create or restart your
+          membership.</span
+        >
+        <div class="data">
+          <input class="email" type="text" placeholder="Email address" />
+          <button id="show" class="red btn-red">Get Started &gt;</button>
+        </div>
+        <!-- Error Message Section -->
+        <div class="error">
+          Error! This NETFLIX is made by Arham Malik. This is not a real
+          Netflix. Please log on from Google Chrome for Official site.
+        </div>
+      </div>
+    </div>
+    <!-- Separation Line -->
+    <div class="separation"></div>
+    <!-- Main Sections -->
+
+    <!-- Section 1 -->
+    <div class="firstsection">
+      <!-- Info about enjoying on TV -->
+      <div class="info">
+        <div>Enjoy on your TV</div>
+        <div>
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.
+        </div>
+      </div>
+      <!-- Images and Video -->
+      <div class="first_img">
+        <img src="led.png" />
+        <video src="video.m4v" muted autoplay loop></video>
+      </div>
+    </div>
+    <div class="separation"></div>
+
+    <!-- Section 2 -->
+    <div class="firstsection">
+      <!-- Images and Info about downloading shows -->
+      <div class="first_img">
+        <img src="girl.jpg" />
+        <div class="download">
+          <img class="stranger" width="64px" src="stranger.png" />
+          <div class="new">
+            <div>Stranger Things</div>
+            <div>Downloading...</div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div>Download your shows to watch offline</div>
+        <div>
+          Save your favorites easily and always have something to watch.
+        </div>
+      </div>
+    </div>
+    <div class="separation"></div>
+
+    <!-- Section 3 -->
+    <div class="firstsection">
+      <!-- Info about watching everywhere -->
+      <div class="info">
+        <div>Watch everywhere</div>
+        <div>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </div>
+      </div>
+      <div class="empty-box"></div>
+    </div>
+    <div class="separation"></div>
+
+    <!-- Section 4 -->
+    <div class="firstsection">
+      <!-- Images and Info about creating profiles for kids -->
+      <div class="first_img">
+        <img src="kids.png" />
+      </div>
+      <div class="info">
+        <div>Create profiles for kids</div>
+        <div>
+          Send kids on adventures with their favorite characters in a space made
+          just for them—free with your membership.
+        </div>
+      </div>
+    </div>
+    <div class="separation"></div>
+
+    <!-- Frequently Asked Questions Section -->
+    <div class="faq">
+      <div class="faqhead">Frequently Asked Questions</div>
+      <!-- questions  -->
+      <div class="question">
+        <div class="f">What is Netflix?</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="question">
+        <div class="f">How much does Netflix cost?</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="question">
+        <div class="f">Where can i watch?</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="question">
+        <div class="f">How do i cancel?</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="question">
+        <div class="f">What can i watch on Netflix?</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="question">
+        <div class="f">Is netflix good for kids?</div>
+        <div class="plus">+</div>
+      </div>
+    </div>
+
+    <!-- Additional Text and Email Input Section -->
+    <div class="text before-email">
+      Ready to watch? Enter your email to create or restart your membership.
+    </div>
+    <div class="again-error">
+      <div class="data">
+        <input class="email" type="text" placeholder="Email address" />
+        <button id="show" class="red btn-red">Get Started &gt;</button>
+      </div>
+    </div>
+
+    <!-- Separation Line -->
+    <div class="separation"></div>
+
+    <!-- Footer Section -->
+      <div class="footer">
+        <div class="footersections">
+          <div class="section">
+            <div class="n">Questions? Contact us.</div>
+            <div>FAQ</div>
+            <div>Investor Relations</div>
+            <div>Privacy</div>
+            <div>Speed Test</div>
+            <div>Netflix Pakistan</div>
+          </div>
+  
+          <div class="section">
+            <div class="space">&nbsp;</div>
+            <div>Help Center</div>
+            <div>Jobs</div>
+            <div>Cookie Preferences</div>
+            <div>Legal Notices</div>
+          </div>
+  
+          <div class="section">
+            <div class="space">&nbsp;</div>
+            <div>Account</div>
+            <div>Ways to Watch</div>
+            <div>Corporate Information</div>
+            <div>Only on Netflix</div>
+          </div>
+  
+          <div class="section">
+            <div class="space">&nbsp;</div>
+            <div>Media Center</div>
+            <div>Terms of Use</div>
+            <div>Contact Us</div>
+          </div>
+        </div>
+      </div>
+      <div class="end"></div>
+
+
+    <!-- JavaScript Section -->
+    <script>
+      // Script for displaying error message
+      let error = document.querySelector(".error");
+      let sign = document.querySelector("#alert");
+      let btn = document.querySelector("#show");
+      btn.addEventListener("click", () => {
+        error.style.display = "block";
+      });
+      // Script for displaying alert on Sign In button click
+      sign.addEventListener("click", () => {
+        alert("This is not a real site. The clone made by Arham Malik.");
+      });
+    </script>
+  </body>
+</html>
